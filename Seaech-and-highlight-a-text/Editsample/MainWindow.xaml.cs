@@ -32,7 +32,7 @@ namespace Editsample
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Getting the string to find the text
-            Edit1.FindOptions.FindText = "public";
+            Edit1.FindOptions.FindText = "BusinessObject";
 
             for (int i = 0; i < Edit1.Lines.Count; i++)
             {
@@ -45,7 +45,6 @@ namespace Editsample
                     //Get the string index and length
                     Edit1.SelectLines(i, i, m.Index, m.Index + m.Length);
                     MessageBox.Show("Current position:\n" + "Linenumber=" + Edit1.LineNumber + "\nCursorindex=" + m.Index);
-                    break;
                 }
             }
         }
